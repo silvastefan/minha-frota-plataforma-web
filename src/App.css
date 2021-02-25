@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+
+:root {
+  --amplify-primary-color: #1890FF;
+  --amplify-primary-tint: #1890FF;
+  --amplify-primary-shade: #1890FF;
+}
