@@ -2,8 +2,8 @@
   "providers": [
     "awscloudformation"
   ],
-  "projectName": "minha-frota-plataforma-web",
-  "version": "3.0",
+  "projectName": "minhafrotaplataforma",
+  "version": "3.1",
   "frontend": "javascript",
   "javascript": {
     "framework": "react",

@@ -3,18 +3,18 @@
 
 const awsmobile = {
     "aws_project_region": "us-east-1",
-    "aws_cognito_identity_pool_id": "us-east-1:546963ba-5e30-4eca-acad-efa33b879164",
+    "aws_cognito_identity_pool_id": "us-east-1:d66c20e9-7b8c-41c3-9036-8187c5401629",
     "aws_cognito_region": "us-east-1",
-    "aws_user_pools_id": "us-east-1_b1yZeLwBe",
-    "aws_user_pools_web_client_id": "3iutkp7264nl8j4u66ucn60i51",
+    "aws_user_pools_id": "us-east-1_ULmUyvvZ6",
+    "aws_user_pools_web_client_id": "29lnpc54coqfqvcdbo1sgabqt",
     "oauth": {},
-    "aws_appsync_graphqlEndpoint": "https://xgehzyzzjzca3av7aiofovhtye.appsync-api.us-east-1.amazonaws.com/graphql",
+    "aws_appsync_graphqlEndpoint": "https://q5zvyvhfsrcwnla35fwmhw7qcq.appsync-api.us-east-1.amazonaws.com/graphql",
     "aws_appsync_region": "us-east-1",
     "aws_appsync_authenticationType": "API_KEY",
-    "aws_appsync_apiKey": "da2-zrxb2gir3vgopj3tlhlvc5kmge",
-    "aws_user_files_s3_bucket": "minha-frota-plataforma-web26361cedf31442d1a6409143732-staging",
+    "aws_appsync_apiKey": "da2-7x4pird6ercndjr7wbqsge2d3e",
+    "aws_user_files_s3_bucket": "minha-frota-plataforma-web26361cedf31442d1a640904043-dev",
     "aws_user_files_s3_bucket_region": "us-east-1"
 };
- 
+
 
 export default awsmobile;

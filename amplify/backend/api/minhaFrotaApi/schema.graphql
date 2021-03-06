@@ -3,4 +3,5 @@ type Note @model {
   name: String!
   description: String
   image: String
+  roomId: String!
 }

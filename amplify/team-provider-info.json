@@ -1,14 +1,14 @@
 {
-  "staging": {
+  "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-amplify4b46eec6c1c84-staging-143732-authRole",
-      "UnauthRoleArn": "arn:aws:iam::158639549380:role/amplify-amplify4b46eec6c1c84-staging-143732-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::158639549380:role/amplify-amplify4b46eec6c1c84-staging-143732-authRole",
+      "AuthRoleName": "amplify-minhafrotaplataforma-dev-04043-authRole",
+      "UnauthRoleArn": "arn:aws:iam::158639549380:role/amplify-minhafrotaplataforma-dev-04043-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::158639549380:role/amplify-minhafrotaplataforma-dev-04043-authRole",
       "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-amplify4b46eec6c1c84-staging-143732-deployment",
-      "UnauthRoleName": "amplify-amplify4b46eec6c1c84-staging-143732-unauthRole",
-      "StackName": "amplify-amplify4b46eec6c1c84-staging-143732",
-      "StackId": "arn:aws:cloudformation:us-east-1:158639549380:stack/amplify-amplify4b46eec6c1c84-staging-143732/abbb06c0-712d-11eb-85c8-1263ebc1f863",
+      "DeploymentBucketName": "amplify-minhafrotaplataforma-dev-04043-deployment",
+      "UnauthRoleName": "amplify-minhafrotaplataforma-dev-04043-unauthRole",
+      "StackName": "amplify-minhafrotaplataforma-dev-04043",
+      "StackId": "arn:aws:cloudformation:us-east-1:158639549380:stack/amplify-minhafrotaplataforma-dev-04043/957858b0-7e14-11eb-afe1-1210b749d873",
       "AmplifyAppId": "d3c44xt58y90cw"
     },
     "categories": {

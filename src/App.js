@@ -4,7 +4,7 @@ import './App.css';
 import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
 import { listNotes } from './graphql/queries';
 import { createNote as createNoteMutation, deleteNote as deleteNoteMutation } from './graphql/mutations';
-
+import { onCreateNote } from './graphql/subscriptions' 
 
 import { Translations } from "@aws-amplify/ui-components";
 import { I18n } from "aws-amplify";
@@ -80,6 +80,7 @@ I18n.setLanguage("en-US")
 const initialFormState = { name: '', description: '' }
 
 function App() {
+  const [message, updateMessage] = useState(null)
   const [notes, setNotes] = useState([]);
   const [formData, setFormData] = useState(initialFormState);
 
@@ -106,6 +107,15 @@ function App() {
       return note;
     }))
     setNotes(apiData.data.listNotes.items);
+    API.graphql({
+      query: onCreateNote
+    })
+    .subscribe({
+      next: messageData => {
+        console.log("messageData from subscription:", messageData)
+        updateMessage(messageData.value.data.onCreateNote.name)
+      }
+    })    
   }
 
   async function createNote() {
@@ -127,7 +137,15 @@ function App() {
 
   return (
     <div className="App">
+      
+      REAL TIME <h1> {message} </h1>
+      
       <h1>My Notes App</h1>
+      <input
+        onChange={e => setFormData({ ...formData, 'roomId': e.target.value})}
+        placeholder="Note roomId"
+        value={formData.roomId}
+      />      
       <input
         onChange={e => setFormData({ ...formData, 'name': e.target.value})}
         placeholder="Note name"
